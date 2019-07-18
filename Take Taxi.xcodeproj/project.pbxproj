@@ -54,14 +54,22 @@
 		C0E079AB22E0D5A500C9D50B /* Take Taxi */ = {
 			isa = PBXGroup;
 			children = (
-				C0E079AC22E0D5A500C9D50B /* AppDelegate.swift */,
+				C0E079BE22E0D5B900C9D50B /* Supporting Files */,
 				C0E079AE22E0D5A500C9D50B /* ViewController.swift */,
 				C0E079B022E0D5A500C9D50B /* Main.storyboard */,
-				C0E079B322E0D5A600C9D50B /* Assets.xcassets */,
-				C0E079B522E0D5A600C9D50B /* LaunchScreen.storyboard */,
 				C0E079B822E0D5A600C9D50B /* Info.plist */,
 			);
 			path = "Take Taxi";
+			sourceTree = "<group>";
+		};
+		C0E079BE22E0D5B900C9D50B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0E079AC22E0D5A500C9D50B /* AppDelegate.swift */,
+				C0E079B322E0D5A600C9D50B /* Assets.xcassets */,
+				C0E079B522E0D5A600C9D50B /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
