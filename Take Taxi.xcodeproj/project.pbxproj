@@ -12,7 +12,29 @@
 		C0E079B222E0D5A500C9D50B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E079B022E0D5A500C9D50B /* Main.storyboard */; };
 		C0E079B422E0D5A600C9D50B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0E079B322E0D5A600C9D50B /* Assets.xcassets */; };
 		C0E079B722E0D5A600C9D50B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E079B522E0D5A600C9D50B /* LaunchScreen.storyboard */; };
+		C0EA319822E0DA94002D6D24 /* MapirServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0EA319522E0DA94002D6D24 /* MapirServices.framework */; };
+		C0EA319922E0DA94002D6D24 /* MapirServices.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0EA319522E0DA94002D6D24 /* MapirServices.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0EA319A22E0DA94002D6D24 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0EA319622E0DA94002D6D24 /* Mapbox.framework */; };
+		C0EA319B22E0DA94002D6D24 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0EA319622E0DA94002D6D24 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0EA319C22E0DA94002D6D24 /* Polyline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0EA319722E0DA94002D6D24 /* Polyline.framework */; };
+		C0EA319D22E0DA94002D6D24 /* Polyline.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0EA319722E0DA94002D6D24 /* Polyline.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C0EA319222E0DA3D002D6D24 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C0EA319D22E0DA94002D6D24 /* Polyline.framework in Embed Frameworks */,
+				C0EA319922E0DA94002D6D24 /* MapirServices.framework in Embed Frameworks */,
+				C0EA319B22E0DA94002D6D24 /* Mapbox.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C0E079A922E0D5A500C9D50B /* Take Taxi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Take Taxi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +44,9 @@
 		C0E079B322E0D5A600C9D50B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0E079B622E0D5A600C9D50B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0E079B822E0D5A600C9D50B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0EA319522E0DA94002D6D24 /* MapirServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapirServices.framework; path = Carthage/Build/iOS/MapirServices.framework; sourceTree = "<group>"; };
+		C0EA319622E0DA94002D6D24 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = Carthage/Build/iOS/Mapbox.framework; sourceTree = "<group>"; };
+		C0EA319722E0DA94002D6D24 /* Polyline.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Polyline.framework; path = Carthage/Build/iOS/Polyline.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +54,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0EA319C22E0DA94002D6D24 /* Polyline.framework in Frameworks */,
+				C0EA319822E0DA94002D6D24 /* MapirServices.framework in Frameworks */,
+				C0EA319A22E0DA94002D6D24 /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +66,7 @@
 		C0E079A022E0D5A500C9D50B = {
 			isa = PBXGroup;
 			children = (
+				C0EA319422E0DA7A002D6D24 /* Frameworks */,
 				C0E079AB22E0D5A500C9D50B /* Take Taxi */,
 				C0E079AA22E0D5A500C9D50B /* Products */,
 			);
@@ -72,6 +101,16 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C0EA319422E0DA7A002D6D24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0EA319622E0DA94002D6D24 /* Mapbox.framework */,
+				C0EA319522E0DA94002D6D24 /* MapirServices.framework */,
+				C0EA319722E0DA94002D6D24 /* Polyline.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,6 +121,7 @@
 				C0E079A522E0D5A500C9D50B /* Sources */,
 				C0E079A622E0D5A500C9D50B /* Frameworks */,
 				C0E079A722E0D5A500C9D50B /* Resources */,
+				C0EA319222E0DA3D002D6D24 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -292,6 +332,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33DVPZ7L7T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Take Taxi/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -310,6 +354,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33DVPZ7L7T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Take Taxi/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

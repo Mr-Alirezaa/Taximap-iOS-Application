@@ -1,0 +1,3 @@
+binary "https://map.ir/mobile/ios/mapir-ios-sdk.json" "2.1.0"
+github "map-ir/ios-sdk-v1-services-beta" "v0.1.0"
+github "raphaelmor/Polyline" "v4.2.1"
