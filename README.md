@@ -1,3 +1,3 @@
-# Take Taxi Application
+# Taximap Application
 
 You can write a online taxi service using Map.ir services on iOS. Here is how...
